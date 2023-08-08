@@ -1,0 +1,80 @@
+// path to settings.json
+// C:\Users\acer\AppData\Roaming\Code\User
+// ширина моего окна - 1229 x 590
+
+@import "_nullstyle";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+// font-family: 'Open Sans', sans-serif;
+// fw 300, 700
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+    color: #fff;
+    background: url(../img/content/global-bg.png) 0 0 / 100% auto no-repeat #636363;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;   
+}
+
+.container {
+  position: relative;
+
+  &__left {
+    position: fixed;
+    background: #ffc500;
+    width: 5%;
+    height: 100vh;
+  }
+
+  &__right {
+    position: relative;
+    width: 95%;
+    margin-left: auto;
+    position: s;
+    // top: 0;
+    // right: 0;
+  }
+}
+.content {
+  padding: 0 100px;
+
+  &__links {
+  }
+}
+.content-body {
+  display: flex;
+  position: relative;
+
+  &__left {
+    position: relative;
+    background: #212121c9;
+  }
+
+  &__right {
+    background: #00000046;
+  }
+}
+.main-content {
+
+  &__left {
+  }
+  
+  &__right {
+  }
+}
+
+.strong {
+  font-weight: 700;
+}
+
+
+
+
+
+

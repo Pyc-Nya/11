@@ -1,0 +1,76 @@
+.content-links {
+  padding: 20px;
+
+
+
+  &__title {
+    
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  &__item {
+    padding: 80% 20px 0;
+    transition: background-position 0.3s ease;
+    &:nth-child(1) {
+      background: url(../img/links/03.jpg) 50% 50% / cover no-repeat;
+    }
+    &:nth-child(2) {
+      background: url(../img/links/01.png) 50% 50% / cover no-repeat;
+    }
+    &:nth-child(3) {
+      background: url(../img/links/02.png) 50% 20% / cover no-repeat;
+    }
+    &:nth-child(4) {
+      background: url(../img/links/04.png) 50% 50% / cover no-repeat;
+    }
+
+
+
+    &:hover {
+      cursor: pointer;
+      &:nth-child(1) {
+        background: url(../img/links/03.jpg) 50% calc(50% - 20px) / 100% no-repeat;
+      }
+      &:nth-child(2) {
+        background: url(../img/links/01.png) 50% calc(50% - 20px) / cover no-repeat;
+      }
+      &:nth-child(3) {
+        background: url(../img/links/02.png) 50% calc(20% - 20px) / cover no-repeat;
+      }
+      &:nth-child(4) {
+        background: url(../img/links/04.png) 50% calc(50% - 20px) / cover no-repeat;
+      }
+
+    }
+  }
+}
+.content-links-item {
+
+  
+  & p {
+    padding: 3px 10px;
+    display: inline-block;
+    background: #000000ab;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: -80px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    color: #c1c1c1;
+  }
+}

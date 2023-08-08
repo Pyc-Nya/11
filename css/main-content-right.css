@@ -1,0 +1,99 @@
+.main-content-right {
+  float: right;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  width: 270px;
+  border: 0.5px solid white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.main-content-right__title {
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  background: #000;
+  border-bottom: 0.5px solid white;
+}
+.main-content-right__image {
+  width: 100%;
+  height: 360px;
+  margin-bottom: 20px;
+  border-bottom: 0.5px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.main-content-right__image img {
+  width: 100%;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.main-content-right__image img:hover {
+  cursor: pointer;
+  width: 110%;
+}
+.main-content-right__info {
+  padding: 0 10px 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.main-content-right-info__left {
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 10px;
+}
+.main-content-right-info__left::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: calc(100% + 10px);
+  height: 0.1px;
+  background: #fff;
+}
+.main-content-right-info__left_last {
+  margin-bottom: 0;
+}
+.main-content-right-info__left_last::after {
+  height: 0;
+}
+.main-content-right-info__right {
+  position: relative;
+  margin-bottom: 10px;
+}
+.main-content-right-info__right::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 0.1px;
+  background: #fff;
+}
+.main-content-right-info__right:last-child {
+  margin-bottom: 0;
+}
+.main-content-right-info__right:last-child::after {
+  height: 0;
+}
+.main-content-right-info__right_blured {
+  background: #b5b5b5;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  width: 30%;
+  height: 14px;
+}
+.main-content-right-info__right_blured p {
+  display: none;
+}

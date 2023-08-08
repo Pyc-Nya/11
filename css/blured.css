@@ -1,0 +1,5 @@
+.blured {
+  background: #b5b5b5;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}

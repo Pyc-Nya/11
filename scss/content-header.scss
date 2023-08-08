@@ -1,0 +1,21 @@
+.content-header {
+    color: #000;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    &__subtitle {
+        font-size: 20px;
+        padding-left: 100px;
+        word-spacing: 120px;
+        margin-bottom: 10px;
+    }
+  
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+  }
