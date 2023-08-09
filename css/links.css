@@ -76,6 +76,11 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .content-links__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
   .content-links-item {
     line-height: 20px;
   }
