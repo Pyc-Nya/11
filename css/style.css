@@ -133,10 +133,10 @@ a {
 }
 @media screen and (max-width: 470px) {
   .container__left {
-    width: 13%;
+    width: 16%;
   }
   .container__right {
-    width: 87%;
+    width: 84%;
   }
 }
 @media only screen and (min-width: 1921px) {

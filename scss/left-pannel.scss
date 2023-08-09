@@ -188,6 +188,8 @@
 
 @media screen and (max-width: 800px) {
   .left-pannel {
+    padding-left: 0;
+    padding-right: 0;
     &__item {
       margin-bottom: 5px;
     }
@@ -213,8 +215,8 @@
     &__text {
       padding-top: 5px;
   
-      line-height: 10px;
-      font-size: 7px;
+      line-height: 14px;
+      font-size: 10px;
   
       &_first {
         padding-top: 15px;
