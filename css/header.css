@@ -51,6 +51,7 @@
 }
 
 .header-top-right__item a {
+  font-weight: 700;
   display: block;
   letter-spacing: 4px;
   font-size: 30px;
@@ -66,8 +67,8 @@
   background: #6ab8c9;
   cursor: pointer;
 }
-.header-top-right a {
-  font-weight: 700;
+.header-top-right__item a:active {
+  color: rgb(36, 36, 36);
 }
 
 .header-bottom {

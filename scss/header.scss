@@ -61,6 +61,7 @@
   // margin-top: 5px;
 
   &__item a {
+    font-weight: 700;
     display: block;
     letter-spacing: 4px;
     font-size: 30px;
@@ -77,9 +78,10 @@
     cursor: pointer;
   }
 
-  & a {
-    font-weight: 700;
+  &__item a:active {
+    color: rgb(36, 36, 36);
   }
+
 }
 
 

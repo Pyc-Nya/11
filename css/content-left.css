@@ -43,3 +43,6 @@
   letter-spacing: 2px;
   background: rgba(156, 234, 252, 0.6784313725);
 }
+.content-left__buttons p:active {
+  color: rgb(36, 36, 36);
+}
