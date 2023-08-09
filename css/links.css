@@ -48,20 +48,21 @@
   background: url(../img/links/04.png) 50% calc(50% - 20px)/cover no-repeat;
 }
 
+.content-links-item {
+  font-weight: 700;
+}
 .content-links-item p {
-  padding: 3px 10px;
+  padding: 4px 10px;
   display: inline-block;
   background: rgba(0, 0, 0, 0.6705882353);
 }
 .content-links-item__title {
   font-size: 25px;
-  font-weight: 700;
   margin-top: -80px;
 }
 .content-links-item__subtitle {
-  font-weight: 700;
   font-size: 16px;
-  color: #c1c1c1;
+  color: #d6d6d6;
 }
 
 @media screen and (min-width: 1920px) {
@@ -72,5 +73,17 @@
        -moz-column-gap: 30px;
             column-gap: 30px;
     row-gap: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content-links-item {
+    line-height: 20px;
+  }
+  .content-links-item__title {
+    font-size: 20px;
+    margin-top: -80px;
+  }
+  .content-links-item__subtitle {
+    font-size: 14px;
   }
 }
