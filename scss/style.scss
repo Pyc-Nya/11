@@ -18,6 +18,11 @@ body {
     background: url(../img/content/global-bg.png) 0 0 / 100% auto no-repeat fixed #636363;
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    background: url(../img/content/global-bg.png) 50% 0 / auto 100% no-repeat fixed #636363;
+}
+}
 
 
 a {
