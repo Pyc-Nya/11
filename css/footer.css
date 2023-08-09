@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .footer {
-  padding: 100px 50px;
+  padding: 100px 50px 100px 60px;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +13,7 @@
 
 .lmao {
   text-align: center;
+  line-height: 50px;
   font-size: 25px;
   color: black;
   letter-spacing: 12px;
@@ -31,7 +32,7 @@
 .lmao a::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
   width: 93%;
   height: 0.1px;
@@ -51,4 +52,23 @@
   -webkit-transform: scaleX(1.15);
       -ms-transform: scaleX(1.15);
           transform: scaleX(1.15); /* При ховере раскрываем полоску */
+}
+
+@media screen and (max-width: 600px) {
+  .lmao {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .lmao a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 506px) {
+  .lmao {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .lmao a {
+    font-size: 16px;
+  }
 }

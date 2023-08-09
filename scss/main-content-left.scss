@@ -80,3 +80,9 @@
     font-size: 13.5px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .main-content-left {
+    font-size: 14px;
+  }
+}

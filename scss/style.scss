@@ -18,6 +18,8 @@ body {
     background: url(../img/content/global-bg.png) 0 0 / 100% auto no-repeat fixed #636363;
 }
 
+
+
 a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -52,6 +54,28 @@ a {
     }
     &__right {
       width: 97%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    &__left {
+      width: 8%;
+    }
+    &__right {
+      width: 92%;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    &__left {
+      width: 13%;
+    }
+    &__right {
+      width: 87%;
     }
   }
 }

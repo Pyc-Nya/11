@@ -123,6 +123,22 @@ a {
     width: 97%;
   }
 }
+@media screen and (max-width: 800px) {
+  .container__left {
+    width: 8%;
+  }
+  .container__right {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .container__left {
+    width: 13%;
+  }
+  .container__right {
+    width: 87%;
+  }
+}
 @media only screen and (min-width: 1921px) {
   .content {
     padding-left: 100px;

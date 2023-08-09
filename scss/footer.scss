@@ -1,5 +1,5 @@
 .footer {
-    padding: 100px 50px;
+    padding: 100px 50px 100px 60px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -7,6 +7,7 @@
 }
 .lmao {
     text-align: center;
+    line-height: 50px;
     font-size: 25px;
     color: black;
     letter-spacing: 12px;
@@ -21,7 +22,7 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: -4px;
+            bottom: 0;
             left: 0;
             width: 93%;
             height: 0.1px;
@@ -34,5 +35,25 @@
         &:hover::after {
             transform: scaleX(1.15); /* При ховере раскрываем полоску */
           }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lmao {
+        font-size: 20px;
+        line-height: 30px;
+        & a {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 506px) {
+    .lmao {
+        font-size: 16px;
+        line-height: 25px;
+        & a {
+            font-size: 16px;
+        }
     }
 }

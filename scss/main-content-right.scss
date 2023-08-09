@@ -112,16 +112,35 @@
 
 @media screen and (max-width: 1200px) {
   .main-content-right {
-    width: 180px;
+    width: 250px;
     &__image {
-      height: 240px;
+      height: 300px;
     }
     &__title {
       padding: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-content-right {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-content-right {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
     &__info {
-      line-height: 12px;
-      font-size: 10px;
+      font-size: 12px;
+      padding: 0 10px 10px;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 10px
     }
   }
 }

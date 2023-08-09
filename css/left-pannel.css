@@ -12,12 +12,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .left-pannel__top {
   margin-bottom: auto;
 }
+.left-pannel__bottom-wrapper {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+  background: #ffc500;
+}
+.left-pannel__bottom {
+  border-top: 0.1px solid #000;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
 .left-pannel__item {
   margin-bottom: 10px;
+}
+.left-pannel__item:last-child {
+  padding-top: 5px;
 }
 .left-pannel__item:last-child {
   margin: 0;
