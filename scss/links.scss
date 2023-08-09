@@ -1,5 +1,6 @@
 .content-links {
   padding: 20px;
+  background: #00000060;
 
 
 
@@ -72,5 +73,17 @@
     font-weight: 700;
     font-size: 16px;
     color: #c1c1c1;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .content-links {
+  
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 400px);
+      column-gap: 30px;
+      row-gap: 20px;
+    }
   }
 }

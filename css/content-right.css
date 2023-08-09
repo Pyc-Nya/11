@@ -29,9 +29,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.content-right__text_hover {
-  display: inline-block;
-}
 .content-right__text:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -49,7 +46,9 @@
 }
 
 .person-icon {
-  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40px;
+          flex: 1 0 40px;
   margin-right: 10px;
   width: 40px;
   height: 40px;

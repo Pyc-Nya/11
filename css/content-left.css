@@ -10,17 +10,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 40px;
 }
 .content-left__title {
   font-size: 42px;
+  line-height: 42px;
 }
 .content-left__buttons {
   font-size: 20px;
-  margin-left: auto;
+  margin-left: 20px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: normal;
+  -webkit-transition: margin-left 0.3s ease;
+  transition: margin-left 0.3s ease;
+}
+.content-left__buttons:hover {
+  margin-left: 0;
 }
 .content-left__buttons p {
   background: #000;

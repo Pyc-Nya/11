@@ -36,7 +36,7 @@
 
 .header-top-left {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   &__item {
 
@@ -58,17 +58,22 @@
 
 }
 .header-top-right {
+  // margin-top: 5px;
 
   &__item a {
+    display: block;
     letter-spacing: 4px;
     font-size: 30px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background: #000000;
     text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: background 0.8s ease, letter-spacing 0.6s ease;
   }
 
   &__item a:hover {
-    color: #ff0000;
-    text-decoration: underline;
+    letter-spacing: 6px;
+    background: #6ab8c9;
     cursor: pointer;
   }
 
@@ -91,7 +96,7 @@
   }
 
   &__item {
-    padding: 14px 24px 12px;
+    padding: 10px 24px 8px;
     border: 2px solid #fff;
     border-radius: 5px;
     margin-left: 20px;
@@ -116,7 +121,23 @@
     &:last-child:hover {
       border: 0px;
       color: #fff;
-      background: #ff1e00;
+      background: #bd1600fd;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-top-right {
+
+    &__item a {
+      letter-spacing: 3px;
+      font-size: 20px;
+      padding: 8px 15px;
+      border-radius: 10px;
+    }
+  
+    &__item a:hover {
+      letter-spacing: 4px;
     }
   }
 }

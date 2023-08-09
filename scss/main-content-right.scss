@@ -41,13 +41,13 @@
   &__info {
     padding: 0 10px 10px;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 3fr;
     gap: 10px
   }
 }
 
 .main-content-right-info {
-
+  line-height: 16px;
 
 
   &__left {
@@ -108,4 +108,20 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content-right {
+    width: 180px;
+    &__image {
+      height: 240px;
+    }
+    &__title {
+      padding: 10px;
+    }
+    &__info {
+      line-height: 12px;
+      font-size: 10px;
+    }
+  }
 }

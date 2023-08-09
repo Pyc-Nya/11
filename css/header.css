@@ -29,9 +29,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header-top-left__item {
   margin-right: 30px;
@@ -51,17 +51,19 @@
 }
 
 .header-top-right__item a {
+  display: block;
   letter-spacing: 4px;
   font-size: 30px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: #000000;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: color 0.3s ease, -webkit-text-decoration 0.3s ease;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-  transition: color 0.3s ease, text-decoration 0.3s ease, -webkit-text-decoration 0.3s ease;
+  -webkit-transition: background 0.8s ease, letter-spacing 0.6s ease;
+  transition: background 0.8s ease, letter-spacing 0.6s ease;
 }
 .header-top-right__item a:hover {
-  color: #ff0000;
-  text-decoration: underline;
+  letter-spacing: 6px;
+  background: #6ab8c9;
   cursor: pointer;
 }
 .header-top-right a {
@@ -82,7 +84,7 @@
           justify-content: flex-end;
 }
 .header-bottom__item {
-  padding: 14px 24px 12px;
+  padding: 10px 24px 8px;
   border: 2px solid #fff;
   border-radius: 5px;
   margin-left: 20px;
@@ -106,5 +108,17 @@
 .header-bottom__item:last-child:hover {
   border: 0px;
   color: #fff;
-  background: #ff1e00;
-}/*# sourceMappingURL=header.css.map */
+  background: rgba(189, 22, 0, 0.9921568627);
+}
+
+@media screen and (max-width: 1200px) {
+  .header-top-right__item a {
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 10px;
+  }
+  .header-top-right__item a:hover {
+    letter-spacing: 4px;
+  }
+}

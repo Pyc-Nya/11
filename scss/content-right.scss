@@ -24,8 +24,9 @@
 	&__text {
 		display: flex;
 		align-items: center;
+
+
 		&_hover {
-			display: inline-block;
 		}
 
 		&:hover {
@@ -52,7 +53,7 @@
 }
 
 .person-icon {
-	display: inline-block;
+	flex: 1 0 40px;
 	margin-right: 10px;
 
 	width: 40px;

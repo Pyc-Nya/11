@@ -44,10 +44,13 @@
 .main-content-right__info {
   padding: 0 10px 10px;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 3fr;
   gap: 10px;
 }
 
+.main-content-right-info {
+  line-height: 16px;
+}
 .main-content-right-info__left {
   font-weight: 700;
   position: relative;
@@ -96,4 +99,20 @@
 }
 .main-content-right-info__right_blured p {
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content-right {
+    width: 180px;
+  }
+  .main-content-right__image {
+    height: 240px;
+  }
+  .main-content-right__title {
+    padding: 10px;
+  }
+  .main-content-right__info {
+    line-height: 12px;
+    font-size: 10px;
+  }
 }

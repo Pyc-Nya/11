@@ -3,6 +3,7 @@
     background: #fff;
     display: flex;
     justify-content: center;
+    margin-top: auto;
 }
 .lmao {
     text-align: center;
@@ -22,16 +23,16 @@
             position: absolute;
             bottom: -4px;
             left: 0;
-            width: 100%;
+            width: 93%;
             height: 0.1px;
             background-color: #000;
-            transform: scaleX(0); /* Начальное значение - полоска невидима */
+            transform: scaleX(1); /* Начальное значение - полоска невидима */
             transform-origin: center; /* Определение точки преобразования */
             transition: transform 0.3s ease; /* Анимация для transform */
         }
     
         &:hover::after {
-            transform: scaleX(1); /* При ховере раскрываем полоску */
+            transform: scaleX(1.15); /* При ховере раскрываем полоску */
           }
     }
 }

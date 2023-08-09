@@ -2,7 +2,9 @@
 // C:\Users\acer\AppData\Roaming\Code\User
 // ширина моего окна - 1229 x 590
 
+
 @import "_nullstyle";
+@import "media";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 // font-family: 'Open Sans', sans-serif;
@@ -36,13 +38,28 @@ a {
     position: relative;
     width: 95%;
     margin-left: auto;
-    position: s;
-    // top: 0;
-    // right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 2200px) {
+  .container {
+    &__left {
+      width: 3%;
+    }
+    &__right {
+      width: 97%;
+    }
+  }
+}
+
 .content {
-  padding: 0 100px;
+  @include media("padding-left", (f-pr: 100px, f: 100px, lap: 10px));
+  @include media("padding-right", (f-pr: 100px, f: 100px, lap: 10px));
+
 
   &__links {
   }

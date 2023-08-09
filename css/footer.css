@@ -8,6 +8,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: auto;
 }
 
 .lmao {
@@ -32,12 +33,12 @@
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 100%;
+  width: 93%;
   height: 0.1px;
   background-color: #000;
-  -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0); /* Начальное значение - полоска невидима */
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1); /* Начальное значение - полоска невидима */
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center; /* Определение точки преобразования */
@@ -47,7 +48,7 @@
   transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Анимация для transform */
 }
 .lmao a:hover::after {
-  -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-          transform: scaleX(1); /* При ховере раскрываем полоску */
+  -webkit-transform: scaleX(1.15);
+      -ms-transform: scaleX(1.15);
+          transform: scaleX(1.15); /* При ховере раскрываем полоску */
 }
