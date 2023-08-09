@@ -85,7 +85,7 @@ body {
 
 @media screen and (max-width: 800px) {
   body {
-    background: url(../img/content/global-bg.png) 80% 0/auto 100% no-repeat fixed #636363;
+    background: #636363;
   }
 }
 a {
